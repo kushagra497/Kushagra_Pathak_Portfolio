@@ -1,18 +1,4 @@
-//  
-// ██╗░░░██╗██╗███╗░░██╗░█████╗░██████╗░
-// ██║░░░██║██║████╗░██║██╔══██╗██╔══██╗
-// ╚██╗░██╔╝██║██╔██╗██║██║░░██║██║░░██║
-// ░╚████╔╝░██║██║╚████║██║░░██║██║░░██║
-// ░░╚██╔╝░░██║██║░╚███║╚█████╔╝██████╔╝
-// ░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚════╝░╚═════╝░
-// ░░░░░██╗░█████╗░███╗░░██╗░██████╗░██╗██████╗░
-// ░░░░░██║██╔══██╗████╗░██║██╔════╝░██║██╔══██╗
-// ░░░░░██║███████║██╔██╗██║██║░░██╗░██║██║░░██║
-// ██╗░░██║██╔══██║██║╚████║██║░░╚██╗██║██║░░██║
-// ╚█████╔╝██║░░██║██║░╚███║╚██████╔╝██║██████╔╝
-// ░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝╚═════╝░
 
-// preloader script............
 var audio = document.getElementById("audioPlayer");
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
@@ -180,3 +166,13 @@ window.addEventListener('resize', windowResize);
 
 
 
+document.getElementById('resume-button-2').onclick = () => {
+  // Delay the download event by 3 seconds
+  window.open(
+        "https://drive.google.com/file/d/1AFzzYYPgCeq_Xng5cebuIv-mRWSgRqer/view"
+      ),
+  setTimeout(() => {
+      // Trigger the download after the delay (replace 'resume-link-2' with your actual element ID)
+      document.getElementById('resume-link-2').click();
+  }, 3000);
+};
